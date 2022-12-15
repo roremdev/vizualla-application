@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "skipLibCheck": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "incremental": true,
+        "paths": {
+            "@pages/*": ["./pages/*"]
+        },
+        "allowJs": true
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
+}

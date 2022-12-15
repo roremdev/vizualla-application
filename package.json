@@ -1,0 +1,83 @@
+{
+    "name": "vizualla-application",
+    "description": "Application for Vizualla Platform",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "format": "pnpm dlx prettier --write .",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "13.0.7",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "typescript": "4.9.4"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "17.3.0",
+        "@commitlint/config-conventional": "17.3.0",
+        "@types/node": "18.11.15",
+        "@types/react": "18.0.26",
+        "@types/react-dom": "18.0.9",
+        "husky": "8.0.2",
+        "prettier": "2.8.1"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ],
+        "parserPreset": "conventional-changelog-conventionalcommits",
+        "rules": {
+            "type-case": [
+                2,
+                "always",
+                "lower-case"
+            ],
+            "type-empty": [
+                2,
+                "never"
+            ],
+            "type-enum": [
+                2,
+                "always",
+                [
+                    "feat",
+                    "fix",
+                    "docs",
+                    "style",
+                    "refactor",
+                    "test",
+                    "ci",
+                    "work",
+                    "chore",
+                    "remove"
+                ]
+            ],
+            "scope-empty": [
+                0
+            ],
+            "subject-case": [
+                2,
+                "always",
+                "lower-case"
+            ],
+            "subject-empty": [
+                2,
+                "never"
+            ],
+            "subject-full-stop": [
+                2,
+                "never",
+                "."
+            ]
+        }
+    }
+}

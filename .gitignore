@@ -1,0 +1,7 @@
+# IDE
+.idea
+
+# Core
+.next
+build
+node_modules
